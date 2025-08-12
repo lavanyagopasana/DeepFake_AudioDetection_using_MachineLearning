@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+        body {
+            {% if background_image %}
+                background-image: url("{{ background_image }}");
+            {% else %}
+                background-color: #f1f1f1;
+            {% endif %}
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #7B68EE;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        header ul li {
+            margin-left: 10px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .about-content {
+            background-color: rgba(255, 255, 255, 0);
+            width: 80%;
+            color: #fff;
+            max-width: 800px;
+            padding: 20px;
+            overflow-y: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+            margin-top: 20px;
+            line-height: 2;
+            max-height: 400px;
+        }
+
+        .about-content p {
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #7B68EE;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DEEPFAKE AUDIO DETECTION</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="about-content">
+            <h2 style="text-align: center;">About the Project  : Deepfake Audio Detection</h2>
+            <p>eepfake audio technology has significantly advanced, enabling AI-generated voices to closely mimic human speech. This poses serious risks, including identity theft, misinformation, and financial fraud. Attackers can exploit deepfake audio to impersonate individuals, tricking voice authentication systems or deceiving people into transferring money. For instance, criminals have used AI-generated voices to impersonate CEOs, instructing employees to authorize fraudulent transactions. Similarly, voice-based authentication systems in banking and smart devices can be bypassed if deepfake models replicate a user's speech patterns accurately.</p>
+            <p>The primary objective of this project is to create a system capable of analyzing voice recordings and distinguishing between genuine and manipulated content. By leveraging state-of-the-art machine learning models and signal processing techniques, the system can effectively detect signs of voice deepfakes and alert users to potential threats.</p>
+            <p><strong>Key Features of the  Deepfake Audio Detection System:</strong></p>
+            <ul>
+                
+                <li><strong>Feature Extraction Techniques:</strong> By analyzing various acoustic properties and linguistic features, the system can identify inconsistencies and anomalies in voice recordings, indicating potential deepfake manipulations.</li>
+                <li><strong>Real-time Detection:</strong> The system operates in real-time, allowing for immediate analysis and detection of voice deepfakes during live interactions or recorded audio playback.</li>
+                <li><strong>User-Friendly Interface:</strong> The system provides a user-friendly interface that enables users to easily upload or record voice samples for analysis and receive prompt feedback on the authenticity of the recordings.</li>
+            </ul>
+            <p>The Deepfake Audio Detection project plays a crucial role in safeguarding against voice-based deepfake attacks, preserving the integrity and trustworthiness of voice communications.</p>
+        </div>
+    </main>
+<footer>
+   
+</footer>
+</body>
+</html>
