@@ -7,10 +7,24 @@ import librosa
 import os
 import time
 
+
+import os
+
+
+
 app = Flask(__name__)
 app.secret_key = "KjhLJF54f6ds234H"
 
 DATABASE = "mydb.sqlite3"
+
+
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+
+
 
 
 dataset = pd.read_csv('dataset.csv')
