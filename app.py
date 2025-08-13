@@ -20,13 +20,6 @@ DATABASE = "mydb.sqlite3"
 
 
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
-
-
-
-
 dataset = pd.read_csv('dataset.csv')
 
 num_mfcc = 100
@@ -161,7 +154,6 @@ def model():
     else:
         return render_template('model.html', background_image=background_image,loader_visible=loader_visible)
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
-
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
